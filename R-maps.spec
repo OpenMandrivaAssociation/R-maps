@@ -1,21 +1,21 @@
-%bcond_without bootstrap
+%bcond_with bootstrap
 %global packname  maps
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
 Version:          2.2_5
-Release:          1
+Release:          2
 Summary:          Draw Geographical Maps
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_2.2-5.tar.gz
 %if %{without bootstrap}
-Requires:         R-mapproj 
+Requires:         R-mapproj
 %endif
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex
 %if %{without bootstrap}
-BuildRequires:    R-mapproj 
+BuildRequires:    R-mapproj
 %endif
 
 %description
