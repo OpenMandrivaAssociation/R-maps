@@ -1,15 +1,15 @@
-%bcond_with bootstrap
+%bcond_without bootstrap
 %global packname  maps
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          2.2_5
+Version:          2.2_6
 Release:          2
 Summary:          Draw Geographical Maps
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_2.2-5.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/%{packname}_2.2-6.tar.gz
 %if %{without bootstrap}
 Requires:         R-mapproj
 %endif
@@ -50,3 +50,15 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
 %{rlibdir}/%{packname}/mapdata
+
+
+%changelog
+* Wed Feb 22 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.2_5-2
++ Revision: 778939
+- Rebuild with proper dependencies
+
+* Fri Feb 17 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.2_5-1
++ Revision: 776275
+- Import R-maps
+- Import R-maps
+
