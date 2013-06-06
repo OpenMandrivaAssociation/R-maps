@@ -1,4 +1,5 @@
 removed_sources:
   maps_2.2-6.tar.gz: 8ca61dc642678c622412b7c2471f644bc7eaae2a
-sources:
   maps_2.3-0.tar.gz: 75f0e494200831fab4b0fa7a6ca0b9c50af4b070
+sources:
+  maps_2.3-2.tar.gz: d64177b1cf23e1cbc2001c097d401f404777d3df
