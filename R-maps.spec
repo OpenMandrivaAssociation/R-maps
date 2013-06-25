@@ -4,7 +4,7 @@
 
 Name:             R-%{packname}
 Version:          2.3.2
-Release:          2
+Release:          1
 Summary:          Draw Geographical Maps
 Group:            Sciences/Mathematics
 License:          GPL-2
@@ -50,7 +50,3 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
 %{rlibdir}/%{packname}/mapdata
-<<<<<<< HEAD
-=======
-
->>>>>>> auto_update
