@@ -3,13 +3,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          2.3.2
+Version:          2.3.6
 Release:          1
 Summary:          Draw Geographical Maps
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/maps_2.3-2.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/maps_2.3-6.tar.gz
 %if %{without bootstrap}
 Requires:         R-mapproj
 %endif
@@ -50,3 +50,4 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
 %{rlibdir}/%{packname}/mapdata
+
