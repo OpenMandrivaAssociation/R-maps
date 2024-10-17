@@ -8,7 +8,7 @@ Release:          2
 Summary:          Draw Geographical Maps
 Group:            Sciences/Mathematics
 License:          GPL-2
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/maps_2.3-2.tar.gz
 %if %{without bootstrap}
 Requires:         R-mapproj
